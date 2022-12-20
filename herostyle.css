@@ -1,0 +1,503 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.main {
+    display: inline-block;
+}
+
+@font-face {
+  font-family: ScratchChizz;
+  src: url(ScratchChizz.otf);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 2%;
+    height: 450px;
+}
+
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+.main {
+    
+    height: 75%;
+    background-color: #f2f2f2;
+   
+}
+
+.header {
+    width: 100%;
+    height: 72px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.heroName {
+    top: 12px;
+    left: 90px;
+    right: 90px;
+    font-size: 20px;
+    font-family: ScratchChizz;
+    z-index: 30;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.heroType {
+    top: 30px;
+    left: 90px;
+    right: 90px;
+    font-size: 18px;
+    font-family: ScratchChizz;
+    z-index: 30;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.heroHp {
+    top: 11px;
+    left: 42px;
+    right: 258px;
+    font-size: 22px;
+    font-family: ScratchChizz;
+    z-index: 30;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.heroTeamHp {
+    top: 41px;
+    left: 24px;
+    right: 285px;
+    font-size: 22px;
+    font-family: ScratchChizz;
+    z-index: 30;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.heropic {
+    z-index: 10;
+}
+
+nav {
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.energyInput {
+    width: 40px;
+}
+
+#energie1 {
+    top: 317px;
+    left: 41px;
+    font-size: 17px;
+    font-family: ScratchChizz;
+    z-index: 30;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#energie2 {
+    top: 313px;
+    left: 112px;
+    font-size: 17px;
+    font-family: ScratchChizz;
+    z-index: 30;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#energie3 {
+    top: 319px;
+    left: 182px;
+    font-size: 17px;
+    font-family: ScratchChizz;
+    z-index: 30;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#energie4 {
+    top: 313px;
+    left: 252px;
+    font-size: 17px;
+    font-family: ScratchChizz;
+    z-index: 30;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#effect1 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 348px;
+    left: 55px;
+}
+
+#value1 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 343px;
+    left: 33px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#effect2 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 379px;
+    left: 55px;
+}
+
+#value2 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 374px;
+    left: 33px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#effect3 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 345px;
+    left: 125px;
+}
+
+#value3 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 340px;
+    left: 105px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#effect4 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 376px;
+    left: 125px;
+}
+
+#value4 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 371px;
+    left: 105px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#effect5 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 348px;
+    left: 198px;
+}
+
+#value5 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 344px;
+    left: 175px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#effect6 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 380px;
+    left: 198px;
+}
+
+#value6 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 377px;
+    left: 175px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#effect7 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 345px;
+    left: 266px;
+}
+
+#value7 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 340px;
+    left: 244px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#effect8 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 376px;
+    left: 266px;
+}
+
+#value8 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 371px;
+    left: 244px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#weaponBackground {
+    position: absolute;
+    z-index: 30;
+    top: 74px;
+    left: 260px;
+    width: 35px;
+}
+
+#sword {
+    position: absolute;
+    z-index: 40;
+    top: 110px;
+    left: 266px;
+    width: 25px;
+}
+
+#axe {
+    position: absolute;
+    z-index: 40;
+    top: 146px;
+    left: 266px;
+    width: 25px;
+}
+
+#bow {
+    position: absolute;
+    z-index: 40;
+    top: 181px;
+    left: 266px;
+    width: 25px;
+}
+
+#staff {
+    position: absolute;
+    z-index: 40;
+    top: 216px;
+    left: 266px;
+    width: 25px;
+}
+
+.switchedeffect1 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 348px !important;
+    left: 33px !important;
+}
+
+.switchedvalue1 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 343px !important;
+    left: 60px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.switchedeffect2 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 379px !important;
+    left: 33px !important;
+}
+
+.switchedvalue2 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 374px !important;
+    left: 60px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.switchedeffect3 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 345px !important;
+    left: 105px !important;
+}
+
+.switchedvalue3 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 340px !important;
+    left: 132px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.switchedeffect4 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 376px !important;
+    left: 105px !important;
+}
+
+.switchedvalue4 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 371px !important;
+    left: 130px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.switchedeffect5 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 348px !important;
+    left: 172px !important;
+}
+
+.switchedvalue5 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 344px !important;
+    left: 200px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.switchedeffect6 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 380px !important;
+    left: 172px !important;
+}
+
+.switchedvalue6 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 377px !important;
+    left: 200px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.switchedeffect7 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 345px !important;
+    left: 244px !important;
+}
+
+.switchedvalue7 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 340px !important;
+    left: 270px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.switchedeffect8 {
+    width: 22px;
+    position: absolute;
+    z-index: 30;
+    top: 376px !important;
+    left: 244px !important;
+}
+
+.switchedvalue8 {
+    font-size: 22px;
+    font-family: ScratchChizz;
+    position: absolute;
+    z-index: 30;
+    top: 371px !important;
+    left: 270px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.doba {
+    display: block;
+    position: relative;
+    width: 25vw;
+    float: left;
+}
