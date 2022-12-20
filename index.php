@@ -51,7 +51,7 @@ session_start();
         <img id="staff" src="img/staff_off.png">    
 
     <div class="frame">
-            <img src="img/ram4.png" width="320px">    </div>
+            <img src="img/ram4.png" width="320px" id="frame">    </div>
 
     <div class="header">
        
@@ -124,6 +124,16 @@ Obrázek hrdiny: <select id="picInput" class="select" onChange=updateCard()>
         <option value="plysobear">Plyšobear</option>
 </select>
 <br>
+
+Počet hvězd:
+<select name="star" class="select" id="starInput" onChange=updateCard()>
+        <option value="1">1*</option>
+        <option value="2">2*</option>
+        <option value="3">3*</option>
+        <option value="4" selected>4*</option>
+    </select>
+
+<br>
 Preference zbraní: 
  <input type="checkbox" id="swordInput" onChange=updateCard() > Meče
  <input type="checkbox" id="axeInput" onChange=updateCard() > Sekery
@@ -137,7 +147,7 @@ Energie: <input id="energInput1" type="number" min="1" max="9" onChange=updateCa
 <br>
 <div id="prvnidoba" class="doba">
     <select id="effectInput1" class="select" onChange=updateCard()>
-        <option selected value="attack">Útok do hrdiny</option>
+        <option value="attack">Útok do hrdiny</option>
         <option value="bite">Vampirijské kousnutí</option>
         <option value="block">Štít</option>
         <option value="canba">Canbalandský útok do zbraně</option>
@@ -159,8 +169,8 @@ Energie: <input id="energInput1" type="number" min="1" max="9" onChange=updateCa
     <input id="valueInput1" type="number" min="-9" max="9" onChange=updateCard() value=2>
     <br>
     <select id="effectInput2" class="select" onChange=updateCard()>
-        <option selected value="attack">Útok do hrdiny</option>
-        <option value="bite">Vampirijské kousnutí</option>
+        <option value="attack">Útok do hrdiny</option>
+        <option value="bite" selected>Vampirijské kousnutí</option>
         <option value="block">Štít</option>
         <option value="canba">Canbalandský útok do zbraně</option>
         <option value="combo">Combo</option>
@@ -178,13 +188,13 @@ Energie: <input id="energInput1" type="number" min="1" max="9" onChange=updateCa
         <option value="univerzal">Univerzální útok</option>
         <option value="weapon">Útok na zbraň</option>
     </select> 
-    <input id="valueInput2" type="number" min="-9" max="9" onChange=updateCard() value=2>
+    <input id="valueInput2" type="number" min="-9" max="9" onChange=updateCard() value=-1>
 </div>
 
 <div id="druhadoba" class="doba">
 
 <select id="effectInput3" class="select" onChange=updateCard()>
-        <option selected value="attack">Útok do hrdiny</option>
+        <option value="attack">Útok do hrdiny</option>
         <option value="bite">Vampirijské kousnutí</option>
         <option value="block">Štít</option>
         <option value="canba">Canbalandský útok do zbraně</option>
@@ -200,13 +210,13 @@ Energie: <input id="energInput1" type="number" min="1" max="9" onChange=updateCa
         <option value="trap">Past</option>
         <option value="trigger">Odpalovač komba</option>
         <option value="unibonus">Požehnání</option>
-        <option value="univerzal">Univerzální útok</option>
+        <option value="univerzal" selected>Univerzální útok</option>
         <option value="weapon">Útok na zbraň</option>
     </select> 
-    <input id="valueInput3" type="number" min="-9" max="9" onChange=updateCard() value=2>
+    <input id="valueInput3" type="number" min="-9" max="9" onChange=updateCard() value=1>
     <br>
     <select id="effectInput4" class="select" onChange=updateCard()>
-        <option selected value="attack">Útok do hrdiny</option>
+        <option value="attack">Útok do hrdiny</option>
         <option value="bite">Vampirijské kousnutí</option>
         <option value="block">Štít</option>
         <option value="canba">Canbalandský útok do zbraně</option>
@@ -219,20 +229,20 @@ Energie: <input id="energInput1" type="number" min="1" max="9" onChange=updateCa
         <option value="night">Noční útok</option>
         <option value="perma">Trvalý útok</option>
         <option value="shrapnel">Šrapnel</option>
-        <option value="trap">Past</option>
+        <option value="trap" selected>Past</option>
         <option value="trigger">Odpalovač komba</option>
         <option value="unibonus">Požehnání</option>
         <option value="univerzal">Univerzální útok</option>
         <option value="weapon">Útok na zbraň</option>
     </select> 
-    <input id="valueInput4" type="number" min="-9" max="9" onChange=updateCard() value=2>
+    <input id="valueInput4" type="number" min="-9" max="9" onChange=updateCard() value=3>
 
 </div>
 
 <div id="tretidoba" class="doba">
 
 <select id="effectInput5" class="select" onChange=updateCard()>
-        <option selected value="attack">Útok do hrdiny</option>
+        <option value="attack">Útok do hrdiny</option>
         <option value="bite">Vampirijské kousnutí</option>
         <option value="block">Štít</option>
         <option value="canba">Canbalandský útok do zbraně</option>
@@ -247,20 +257,20 @@ Energie: <input id="energInput1" type="number" min="1" max="9" onChange=updateCa
         <option value="shrapnel">Šrapnel</option>
         <option value="trap">Past</option>
         <option value="trigger">Odpalovač komba</option>
-        <option value="unibonus">Požehnání</option>
+        <option value="unibonus" selected>Požehnání</option>
         <option value="univerzal">Univerzální útok</option>
         <option value="weapon">Útok na zbraň</option>
     </select> 
     <input id="valueInput5" type="number" min="-9" max="9" onChange=updateCard() value=2>
     <br>
     <select id="effectInput6" class="select" onChange=updateCard()>
-        <option selected value="attack">Útok do hrdiny</option>
+        <option value="attack">Útok do hrdiny</option>
         <option value="bite">Vampirijské kousnutí</option>
         <option value="block">Štít</option>
         <option value="canba">Canbalandský útok do zbraně</option>
         <option value="combo">Combo</option>
         <option value="cumulative">Kumulák</option>
-        <option value="curse">Prokletí</option>
+        <option value="curse" selected>Prokletí</option>
         <option value="energy">Energie</option>
         <option value="heal">Léčení</option>
         <option value="mechanic">Mechanikova superakce</option>
@@ -273,21 +283,21 @@ Energie: <input id="energInput1" type="number" min="1" max="9" onChange=updateCa
         <option value="univerzal">Univerzální útok</option>
         <option value="weapon">Útok na zbraň</option>
     </select> 
-    <input id="valueInput6" type="number" min="-9" max="9" onChange=updateCard() value=2>
+    <input id="valueInput6" type="number" min="-9" max="9" onChange=updateCard() value=-2>
 
 </div>
 
 <div id="ctvrtadoba" class="doba">
 
 <select id="effectInput7" class="select" onChange=updateCard()>
-        <option selected value="attack">Útok do hrdiny</option>
+        <option value="attack">Útok do hrdiny</option>
         <option value="bite">Vampirijské kousnutí</option>
         <option value="block">Štít</option>
         <option value="canba">Canbalandský útok do zbraně</option>
         <option value="combo">Combo</option>
         <option value="cumulative">Kumulák</option>
         <option value="curse">Prokletí</option>
-        <option value="energy">Energie</option>
+        <option value="energy" selected>Energie</option>
         <option value="heal">Léčení</option>
         <option value="mechanic">Mechanikova superakce</option>
         <option value="night">Noční útok</option>
@@ -299,7 +309,7 @@ Energie: <input id="energInput1" type="number" min="1" max="9" onChange=updateCa
         <option value="univerzal">Univerzální útok</option>
         <option value="weapon">Útok na zbraň</option>
     </select> 
-    <input id="valueInput7" type="number" min="-9" max="9" onChange=updateCard() value=2>
+    <input id="valueInput7" type="number" min="-9" max="9" onChange=updateCard() value=3>
     <br>
     <select id="effectInput8" class="select" onChange=updateCard()>
         <option selected value="attack">Útok do hrdiny</option>
@@ -321,7 +331,7 @@ Energie: <input id="energInput1" type="number" min="1" max="9" onChange=updateCa
         <option value="univerzal">Univerzální útok</option>
         <option value="weapon">Útok na zbraň</option>
     </select> 
-    <input id="valueInput8" type="number" min="-9" max="9" onChange=updateCard() value=2>
+    <input id="valueInput8" type="number" min="-9" max="9" onChange=updateCard() value=3>
 
 </div>
 

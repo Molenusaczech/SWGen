@@ -14,6 +14,8 @@ function updateCard() {
 
     document.getElementById("heropic").src = "img/" + document.getElementById("picInput").value + ".png";
 
+    document.getElementById("frame").src = "img/ram" + document.getElementById("starInput").value + ".png";
+
     if (document.getElementById("swordInput").checked == true) {
         document.getElementById("sword").src = "img/sword_on.png";
     } else {
