@@ -342,6 +342,9 @@ Energie: <input id="energInput1" type="number" min="1" max="9" onChange=updateCa
 
 </div>
 
+<button id="jsonExport" onClick=jsonExport()>Exportovat do JSONu</button>
+<button id="jsonImportButton" onClick=jsonImport()>Importovat z JSONu</button>
+
 </div>
 
 <script src="main.js"></script>
