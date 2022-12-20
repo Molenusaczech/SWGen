@@ -122,6 +122,13 @@ Obrázek hrdiny: <select id="picInput" class="select" onChange=updateCard()>
         <option value="rock_golibuk">Rock Golibuk</option>
         <option value="troll">Troll</option>
         <option value="plysobear">Plyšobear</option>
+        <option value="gnometopus">Gnometopus</option>
+        <option value="kastrolovytrpaslik">Kastrólový trpaslík</option>
+        <option value="silenyVynalezce">Šílený vynálezce</option>
+        <option value="hrobnik">Hrobník</option>
+        <option value="motobobr">Motobobr</option>
+        <option value="megamysl">Megamysl</option>
+        <option value="rytir">Rudý Rytíř</option>
 </select>
 <br>
 
