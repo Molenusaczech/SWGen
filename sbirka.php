@@ -23,7 +23,7 @@ $inverts = array("mechanic", "night", "trigger");
 
 $cards = file_get_contents("data.json");
 $cards = json_decode($cards, true);
-$cards = $cards[$_SESSION['user']]['cards'];
+$cards = $cards[$user]['cards'];
 foreach ($cards as $id => $card) {
     
     if ($card["weapons"]["sword"]) {

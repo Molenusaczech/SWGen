@@ -1085,5 +1085,127 @@
             }
         },
         "isBanned": false
+    },
+    "lord-hankovic-4297": {
+        "isAdmin": false,
+        "islands": [],
+        "cards": {
+            "25": {
+                "name": "V\u0161echnos\u0165al",
+                "type": "Chapadeln\u00edk",
+                "hp": "24",
+                "teamHp": "9",
+                "pic": "gnometopus",
+                "star": "3",
+                "weapons": {
+                    "sword": true,
+                    "axe": true,
+                    "bow": false,
+                    "staff": true
+                },
+                "energy": {
+                    "1": "4",
+                    "2": "3",
+                    "3": "4",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "attack",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "univerzal",
+                        "value": "3"
+                    },
+                    "3": {
+                        "effect": "unibonus",
+                        "value": "-1"
+                    },
+                    "4": {
+                        "effect": "block",
+                        "value": "2"
+                    },
+                    "5": {
+                        "effect": "combo",
+                        "value": "3"
+                    },
+                    "6": {
+                        "effect": "perma",
+                        "value": "1"
+                    },
+                    "7": {
+                        "effect": "trigger",
+                        "value": "0"
+                    },
+                    "8": {
+                        "effect": "block",
+                        "value": "2"
+                    }
+                }
+            }
+        },
+        "isBanned": false
+    },
+    "matiakinko-6126": {
+        "isAdmin": false,
+        "islands": [],
+        "cards": {
+            "26": {
+                "name": "Vousat\u00fd kos\u0165\u00e1k ",
+                "type": "Hrobn\u00edk ",
+                "hp": "34",
+                "teamHp": "12",
+                "pic": "vousatyhrobnik",
+                "star": "4",
+                "weapons": {
+                    "sword": true,
+                    "axe": true,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "7",
+                    "2": "5",
+                    "3": "4",
+                    "4": "6"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "curse",
+                        "value": "3"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "4"
+                    },
+                    "3": {
+                        "effect": "perma",
+                        "value": "4"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "6"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "7"
+                    },
+                    "6": {
+                        "effect": "energy",
+                        "value": "5"
+                    },
+                    "7": {
+                        "effect": "night",
+                        "value": "4"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            }
+        },
+        "isBanned": false
     }
 }

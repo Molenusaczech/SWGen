@@ -19,7 +19,7 @@ $inverts = array("mechanic", "night", "trigger");
 $file = file_get_contents("data.json");
 $cards = json_decode($file, true);
 
-$card = $cards[$_SESSION['user']]['cards'][$id];
+$card = $cards[$user]['cards'][$id];
 
 if ($card["weapons"]["sword"]) {
     $sword = "sword_on.png";
