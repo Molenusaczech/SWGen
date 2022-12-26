@@ -124,7 +124,7 @@ function jsonExport() {
 function jsonImport() {
     let json = prompt("Vložte JSON karty:");
 
-    if (json == "") {
+    if (json == "" || json == null) {
         return;
     }
 
