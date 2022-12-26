@@ -19,7 +19,9 @@ if ($args[1] == "api" && $args[2] == "card") {
     exit();
 }
 
-require "header.php";
+if ($args[1] !== "sbirka" || isset($args[2])) {
+    require "header.php";
+}
 
 if ($request == "/") {
     require "home.php";
