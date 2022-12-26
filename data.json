@@ -1,0 +1,1089 @@
+{
+    "mole-7050": {
+        "isAdmin": false,
+        "islands": [],
+        "cards": {
+            "0": {
+                "name": "Jm\u00e9no hrdiny",
+                "type": "Druh hrdiny",
+                "hp": "99",
+                "teamHp": "9",
+                "pic": "golibuk",
+                "star": "4",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "attack",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "1": {
+                "name": "dal\u0161i test2",
+                "type": "testovac\u00ed hroba\u0159",
+                "hp": "69",
+                "teamHp": "5",
+                "pic": "hrobnik",
+                "star": "4",
+                "weapons": {
+                    "sword": true,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "4",
+                    "2": "1",
+                    "3": "7",
+                    "4": "2"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "univerzal",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "2": {
+                "name": "Jm\u00e9no hrdiny",
+                "type": "Druh hrdiny",
+                "hp": "99",
+                "teamHp": "9",
+                "pic": "golibuk",
+                "star": "4",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "attack",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "3": {
+                "name": "test",
+                "type": "testik",
+                "hp": "91",
+                "teamHp": "7",
+                "pic": "purplepotato",
+                "star": "3",
+                "weapons": {
+                    "sword": true,
+                    "axe": true,
+                    "bow": true,
+                    "staff": true
+                },
+                "energy": {
+                    "1": "3",
+                    "2": "1",
+                    "3": "3",
+                    "4": "2"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "trigger",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "shrapnel",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "unibonus",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "5": {
+                "name": "dal\u0161i test",
+                "type": "testovac\u00ed hroba\u0159",
+                "hp": "69",
+                "teamHp": "5",
+                "pic": "hrobnik",
+                "star": "4",
+                "weapons": {
+                    "sword": true,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "4",
+                    "2": "1",
+                    "3": "7",
+                    "4": "2"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "univerzal",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "10": {
+                "name": "dal\u0161i test3",
+                "type": "testovac\u00ed hroba\u0159",
+                "hp": "69",
+                "teamHp": "5",
+                "pic": "hrobnik",
+                "star": "4",
+                "weapons": {
+                    "sword": true,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "4",
+                    "2": "1",
+                    "3": "7",
+                    "4": "2"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "univerzal",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "11": {
+                "name": "href",
+                "type": "Druh hrdiny",
+                "hp": "99",
+                "teamHp": "9",
+                "pic": "rachael",
+                "star": "3",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "attack",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "12": {
+                "name": "ref2",
+                "type": "hrefetst",
+                "hp": "90",
+                "teamHp": "9",
+                "pic": "rachael",
+                "star": "4",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "13": {
+                "name": "ref2",
+                "type": "hrefetst",
+                "hp": "90",
+                "teamHp": "9",
+                "pic": "rachael",
+                "star": "4",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "14": {
+                "name": "Jm\u00e9no hrdiny",
+                "type": "Druh hrdiny",
+                "hp": "99",
+                "teamHp": "9",
+                "pic": "golibuk",
+                "star": "4",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "attack",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "15": {
+                "name": "Jm\u00e9no hrdiny",
+                "type": "Druh hrdiny",
+                "hp": "99",
+                "teamHp": "9",
+                "pic": "golibuk",
+                "star": "4",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "attack",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "16": {
+                "name": "Jm\u00e9no hrdiny",
+                "type": "Druh hrdiny",
+                "hp": "99",
+                "teamHp": "9",
+                "pic": "golibuk",
+                "star": "4",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "attack",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "17": {
+                "name": "Jm\u00e9no hrdiny",
+                "type": "Druh hrdiny",
+                "hp": "99",
+                "teamHp": "9",
+                "pic": "golibuk",
+                "star": "4",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "attack",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "18": {
+                "name": "Jm\u00e9no hrdiny",
+                "type": "Druh hrdiny",
+                "hp": "99",
+                "teamHp": "9",
+                "pic": "golibuk",
+                "star": "4",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "attack",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "19": {
+                "name": "Jm\u00e9no hrdiny",
+                "type": "Druh hrdiny",
+                "hp": "99",
+                "teamHp": "9",
+                "pic": "golibuk",
+                "star": "4",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "attack",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "20": {
+                "name": "komboGolem",
+                "type": "RedCombo",
+                "hp": "69",
+                "teamHp": "3",
+                "pic": "troll",
+                "star": "1",
+                "weapons": {
+                    "sword": true,
+                    "axe": false,
+                    "bow": false,
+                    "staff": true
+                },
+                "energy": {
+                    "1": "9",
+                    "2": "9",
+                    "3": "9",
+                    "4": "9"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "combo",
+                        "value": "9"
+                    },
+                    "2": {
+                        "effect": "trigger",
+                        "value": "-9"
+                    },
+                    "3": {
+                        "effect": "trigger",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trigger",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "trigger",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "combo",
+                        "value": "-3"
+                    },
+                    "7": {
+                        "effect": "trigger",
+                        "value": "1"
+                    },
+                    "8": {
+                        "effect": "combo",
+                        "value": "3"
+                    }
+                }
+            },
+            "21": {
+                "name": "bantest",
+                "type": "2",
+                "hp": "91",
+                "teamHp": "7",
+                "pic": "plysobear",
+                "star": "3",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "trap",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "heal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trigger",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "shrapnel",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "trigger",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "trigger",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "heal",
+                        "value": "3"
+                    }
+                }
+            },
+            "22": {
+                "name": "Jm\u00e9no hrdiny",
+                "type": "Druh hrdiny",
+                "hp": "99",
+                "teamHp": "9",
+                "pic": "golibuk",
+                "star": "4",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "attack",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "23": {
+                "name": "Jm\u00e9no hrdiny",
+                "type": "Druh hrdiny",
+                "hp": "99",
+                "teamHp": "9",
+                "pic": "golibuk",
+                "star": "4",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "attack",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            },
+            "24": {
+                "name": "Jm\u00e9no hrdiny",
+                "type": "Druh hrdiny",
+                "hp": "99",
+                "teamHp": "9",
+                "pic": "vousatyhrobnik",
+                "star": "4",
+                "weapons": {
+                    "sword": false,
+                    "axe": false,
+                    "bow": false,
+                    "staff": false
+                },
+                "energy": {
+                    "1": "1",
+                    "2": "2",
+                    "3": "3",
+                    "4": "4"
+                },
+                "effects": {
+                    "1": {
+                        "effect": "attack",
+                        "value": "2"
+                    },
+                    "2": {
+                        "effect": "bite",
+                        "value": "-1"
+                    },
+                    "3": {
+                        "effect": "univerzal",
+                        "value": "1"
+                    },
+                    "4": {
+                        "effect": "trap",
+                        "value": "3"
+                    },
+                    "5": {
+                        "effect": "unibonus",
+                        "value": "2"
+                    },
+                    "6": {
+                        "effect": "curse",
+                        "value": "-2"
+                    },
+                    "7": {
+                        "effect": "energy",
+                        "value": "3"
+                    },
+                    "8": {
+                        "effect": "attack",
+                        "value": "3"
+                    }
+                }
+            }
+        },
+        "isBanned": false
+    }
+}

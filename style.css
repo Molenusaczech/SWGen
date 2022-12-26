@@ -56,3 +56,8 @@ header {
 body {
     display: block;
 }
+
+a {
+    color: #979797;
+    text-decoration: underline;
+}

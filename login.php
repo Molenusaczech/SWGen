@@ -1,4 +1,5 @@
 <?php 
+error_reporting(0);
 session_start();
 
 if(isset($_POST["login"]) && isset($_POST["password"])) {
@@ -37,7 +38,22 @@ if(isset($_POST["login"]) && isset($_POST["password"])) {
     if($code == 200) {
         $authed = 1;
         $_SESSION['user'] = $login;
-        header("Location: index.php");
+
+        $file = file_get_contents("data.json");
+        $file = json_decode($file, true);
+
+        if (!isset($file[$login])) {
+            $file[$login] = array(
+                "isAdmin" => false,
+                "islands" => array(),
+                "cards" => array(),
+                "isBanned" => false
+            );
+            $file = json_encode($file, JSON_PRETTY_PRINT);
+            file_put_contents("data.json", $file);
+        }
+
+        header("Location: /");
     } else {
         $authed = 0;
         echo "Wrong credentials";

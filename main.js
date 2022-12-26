@@ -123,6 +123,11 @@ function jsonExport() {
 
 function jsonImport() {
     let json = prompt("Vložte JSON karty:");
+
+    if (json == "") {
+        return;
+    }
+
     try {
         json = JSON.parse(json);
         document.getElementById("nameInput").value = json.name;
@@ -161,4 +166,99 @@ function jsonImport() {
         return;
     }
     console.log(json);
+}
+
+function saveCard() {
+    let json = {
+        "name": document.getElementById("nameInput").value,
+        "type": document.getElementById("typeInput").value,
+        "hp": document.getElementById("hpInput").value,
+        "teamHp": document.getElementById("teamHpInput").value,
+        "pic": document.getElementById("picInput").value,
+        "star": document.getElementById("starInput").value,
+        "weapons": {
+            "sword": document.getElementById("swordInput").checked,
+            "axe": document.getElementById("axeInput").checked,
+            "bow": document.getElementById("bowInput").checked,
+            "staff": document.getElementById("staffInput").checked
+        },
+        "energy": {
+            "1": document.getElementById("energInput1").value,
+            "2": document.getElementById("energInput2").value,
+            "3": document.getElementById("energInput3").value,
+            "4": document.getElementById("energInput4").value
+        },
+        "effects": {
+            "1": {
+                "effect": document.getElementById("effectInput1").value,
+                "value": document.getElementById("valueInput1").value
+            },
+            "2": {
+                "effect": document.getElementById("effectInput2").value,
+                "value": document.getElementById("valueInput2").value
+            },
+            "3": {
+                "effect": document.getElementById("effectInput3").value,
+                "value": document.getElementById("valueInput3").value
+            },
+            "4": {
+                "effect": document.getElementById("effectInput4").value,
+                "value": document.getElementById("valueInput4").value
+            },
+            "5": {
+                "effect": document.getElementById("effectInput5").value,
+                "value": document.getElementById("valueInput5").value
+            },
+            "6": {
+                "effect": document.getElementById("effectInput6").value,
+                "value": document.getElementById("valueInput6").value
+            },
+            "7": {
+                "effect": document.getElementById("effectInput7").value,
+                "value": document.getElementById("valueInput7").value
+            },
+            "8": {
+                "effect": document.getElementById("effectInput8").value,
+                "value": document.getElementById("valueInput8").value
+            }
+        }
+    }
+    json = JSON.stringify(json);
+    console.log(json);
+
+    let data = new FormData();
+    data.append('method', 'saveCard');
+    data.append('card', json);
+
+    $.ajax({
+        url: 'api/card',
+        data: data,
+        processData: false,
+        contentType: false,
+        type: 'POST',
+        success: function(data){
+            //console.log(data);
+            data = JSON.parse(data);
+            if (data.status == "error") {
+                alert("Nepodařilo se uložit kartu. Error " + data.error);
+                return;
+            }
+            window.location.href = "/card/" + data.user +"/" + data.id;
+        }
+    });
+        //data.append('data', json);
+
+
+    /*fetch('/api/card', {
+        method: 'POST',
+        body: data,
+        credentials: 'include'
+    })
+.then(response => response.json())
+.then((response) => {
+    console.log(response);
+})*/
+
+    
+
 }

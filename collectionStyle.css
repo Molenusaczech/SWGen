@@ -1,0 +1,19 @@
+.collectionContainer {
+    height: 460px;
+    width: 330px;
+    float: left;
+}
+
+.cardlink {
+    color: #000000;
+    text-decoration: none;
+}
+
+#logout {
+    color: #979797;
+    text-decoration: underline;
+}
+
+.main {
+    background-color: white;
+}

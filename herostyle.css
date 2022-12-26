@@ -20,7 +20,6 @@
     position: relative;
     width: 100%;
     margin: 2%;
-    height: 450px;
 }
 
 .frame {
@@ -34,7 +33,7 @@
 
 .main {
     
-    height: 75%;
+    height: 470px;
     background-color: #f2f2f2;
    
 }
