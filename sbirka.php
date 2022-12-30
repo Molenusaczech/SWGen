@@ -21,7 +21,7 @@ echo $user;
 
 $inverts = array("mechanic", "night", "trigger");
 
-$cards = file_get_contents("data.json");
+$cards = file_get_contents("../storage/data.json");
 $cards = json_decode($cards, true);
 $cards = $cards[$user]['cards'];
 foreach ($cards as $id => $card) {
@@ -50,16 +50,16 @@ foreach ($cards as $id => $card) {
         $staff = "staff_off.png";
     }
 //htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
-    $name = $card["name"];
-    $type = $card["type"];
-    $hp = $card["hp"];
-    $teamHp = $card["teamHp"];
-    $pic = $card["pic"];
-    $star = $card["star"];
-    $energie1 = $card["energy"]["1"];
-    $energie2 = $card["energy"]["2"];
-    $energie3 = $card["energy"]["3"];
-    $energie4 = $card["energy"]["4"];
+    $name = htmlspecialchars($card["name"], ENT_QUOTES, 'UTF-8');
+    $type = htmlspecialchars($card["type"], ENT_QUOTES, 'UTF-8');
+    $hp = htmlspecialchars($card["hp"], ENT_QUOTES, 'UTF-8');
+    $teamHp = htmlspecialchars($card["teamHp"], ENT_QUOTES, 'UTF-8');
+    $pic = htmlspecialchars($card["pic"], ENT_QUOTES, 'UTF-8');
+    $star = htmlspecialchars($card["star"], ENT_QUOTES, 'UTF-8');
+    $energie1 = htmlspecialchars($card["energy"]["1"], ENT_QUOTES, 'UTF-8');
+    $energie2 = htmlspecialchars($card["energy"]["2"], ENT_QUOTES, 'UTF-8');
+    $energie3 = htmlspecialchars($card["energy"]["3"], ENT_QUOTES, 'UTF-8');
+    $energie4 = htmlspecialchars($card["energy"]["4"], ENT_QUOTES, 'UTF-8');
 
     $effect1 = $card["effects"]["1"]["effect"];
     $val1 = $card["effects"]["1"]["value"];

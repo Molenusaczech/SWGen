@@ -4,7 +4,7 @@
 
 $resp = array();
 
-$file = file_get_contents("data.json");
+$file = file_get_contents("../storage/data.json");
 $file = json_decode($file, true);
 
 if (!isset($_SESSION['user'])) {
@@ -20,7 +20,7 @@ if (!isset($_SESSION['user'])) {
 } else {
 
 
-    $reports = file_get_contents("reports.json");
+    $reports = file_get_contents("../storage/reports.json");
     $reports = json_decode($reports, true);
 
     $reason = $_POST['reason'];
@@ -39,7 +39,7 @@ if (!isset($_SESSION['user'])) {
     array_push($reports, $repdata);
 
     $reports = json_encode($reports, JSON_PRETTY_PRINT);
-    file_put_contents("reports.json", $reports);    
+    file_put_contents("../storage/reports.json", $reports);    
 }
 
 echo json_encode($resp);

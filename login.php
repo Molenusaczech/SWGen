@@ -39,7 +39,7 @@ if(isset($_POST["login"]) && isset($_POST["password"])) {
         $authed = 1;
         $_SESSION['user'] = $login;
 
-        $file = file_get_contents("data.json");
+        $file = file_get_contents("../storage/data.json");
         $file = json_decode($file, true);
 
         if (!isset($file[$login])) {
@@ -50,7 +50,7 @@ if(isset($_POST["login"]) && isset($_POST["password"])) {
                 "isBanned" => false
             );
             $file = json_encode($file, JSON_PRETTY_PRINT);
-            file_put_contents("data.json", $file);
+            file_put_contents("../storage/data.json", $file);
         }
 
         header("Location: /");
@@ -77,7 +77,7 @@ if(isset($_POST["login"]) && isset($_POST["password"])) {
 
 <div class="authWindow"> 
         <!--<p>Login:</p> -->
-        <form action="login.php" method="post">
+        <form action="login" method="post">
             <input type="text" name="login" placeholder="App ID"> <br>
             <input type="password" name="password" placeholder="PIN"> <br>
 
