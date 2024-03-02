@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SW Hero Gen V2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/herostyle.css">
+    <link rel="stylesheet" href="/collectionStyle.css">
+</head>
+
+<body>
+
+
+<?php 
+$inverts = array("mechanic", "night", "trigger");
+
+$file = file_get_contents("../storage/data.json");
+$cards = json_decode($file, true);
+
+$card = $cards[$user]['islands'][$islandid]["types"][$typeid];
+
+//var_dump($card);
+
+if ($card["weapons"]["sword"]) {
+    $sword = "sword_on.png";
+} else {
+    $sword = "sword_off.png";
+}
+
+if ($card["weapons"]["axe"]) {
+    $axe = "axe_on.png";
+} else {
+    $axe = "axe_off.png";
+}
+
+if ($card["weapons"]["bow"]) {
+    $bow = "bow_on.png";
+} else {
+    $bow = "bow_off.png";
+}
+
+if ($card["weapons"]["staff"]) {
+    $staff = "staff_on.png";
+} else {
+    $staff = "staff_off.png";
+}
+//htmlspecialchars($string, ENT_QUOTES, 'UTF-8');
+    //$name = htmlspecialchars($card["name"], ENT_QUOTES, 'UTF-8');
+    $type = htmlspecialchars($card["type"], ENT_QUOTES, 'UTF-8');
+    //$hp = htmlspecialchars($card["hp"], ENT_QUOTES, 'UTF-8');
+    //$teamHp = htmlspecialchars($card["teamHp"], ENT_QUOTES, 'UTF-8');
+    $pic = htmlspecialchars($card["pic"], ENT_QUOTES, 'UTF-8');
+    $star = htmlspecialchars($card["star"], ENT_QUOTES, 'UTF-8');
+    //$energie1 = htmlspecialchars($card["energy"]["1"], ENT_QUOTES, 'UTF-8');
+    //$energie2 = htmlspecialchars($card["energy"]["2"], ENT_QUOTES, 'UTF-8');
+    //$energie3 = htmlspecialchars($card["energy"]["3"], ENT_QUOTES, 'UTF-8');
+    //$energie4 = htmlspecialchars($card["energy"]["4"], ENT_QUOTES, 'UTF-8');
+
+$effect1 = $card["effects"]["1"]["effect"];
+
+$effect2 = $card["effects"]["2"]["effect"];
+
+
+$effect3 = $card["effects"]["3"]["effect"];
+
+$effect4 = $card["effects"]["4"]["effect"];
+
+
+$effect5 = $card["effects"]["5"]["effect"];
+
+
+$effect6 = $card["effects"]["6"]["effect"];
+
+$effect7 = $card["effects"]["7"]["effect"];
+
+$effect8 = $card["effects"]["8"]["effect"];
+
+
+if (in_array($effect1, $inverts)) {
+    $effectClass1 = "class='switchedeffect1'";
+    $valueClass1 = "class='switchedvalue1'";
+} else {
+    $effectClass1 = "";
+    $valueClass1 = "";
+}
+
+if (in_array($effect2, $inverts)) {
+    $effectClass2 = "class='switchedeffect2'";
+    $valueClass2 = "class='switchedvalue2'";
+} else {
+    $effectClass2 = "";
+    $valueClass2 = "";
+}
+
+if (in_array($effect3, $inverts)) {
+    $effectClass3 = "class='switchedeffect3'";
+    $valueClass3 = "class='switchedvalue3'";
+} else {
+    $effectClass3 = "";
+    $valueClass3 = "";
+}
+
+if (in_array($effect4, $inverts)) {
+    $effectClass4 = "class='switchedeffect4'";
+    $valueClass4 = "class='switchedvalue4'";
+} else {
+    $effectClass4 = "";
+    $valueClass4 = "";
+}
+
+if (in_array($effect5, $inverts)) {
+    $effectClass5 = "class='switchedeffect5'";
+    $valueClass5 = "class='switchedvalue5'";
+} else {
+    $effectClass5 = "";
+    $valueClass5 = "";
+}
+
+if (in_array($effect6, $inverts)) {
+    $effectClass6 = "class='switchedeffect6'";
+    $valueClass6 = "class='switchedvalue6'";
+} else {
+    $effectClass6 = "";
+    $valueClass6 = "";
+}
+
+if (in_array($effect7, $inverts)) {
+    $effectClass7 = "class='switchedeffect7'";
+    $valueClass7 = "class='switchedvalue7'";
+} else {
+    $effectClass7 = "";
+    $valueClass7 = "";
+}
+
+if (in_array($effect8, $inverts)) {
+    $effectClass8 = "class='switchedeffect8'";
+    $valueClass8 = "class='switchedvalue8'";
+} else {
+    $effectClass8 = "";
+    $valueClass8 = "";
+}
+
+echo <<<END
+<div class="collectionContainer">
+<div class="main">
+<div class="container">
+
+    
+    <img src="/img/$pic.png" width="310px" class="heropic" id="heropic">    <!-- <img src="/img/golibuk.png" width="310px" class="heropic"> -->
+
+  
+    <img id="weaponBackground" src="/img/weapon_background.png">
+
+
+        <img id="sword" src="/img/$sword">    
+        <img id="axe" src="/img/$axe">    
+        <img id="bow" src="/img/$bow">    
+        <img id="staff" src="/img/$staff">    
+
+    <div class="frame">
+            <img src="/img/ram$star.png" width="320px" id="frame">    </div>
+
+    <div class="header">
+       
+    <div class="heroName" id="heroName">
+           </div>
+
+    <div class="heroType" id="heroType">
+        $type    </div>
+
+    <div class="heroHp" id="heroHp">
+            </div>
+
+    <div class="heroTeamHp" id="heroTeamHp">
+            </div>
+
+    <div id="energie1">
+        +    </div>
+
+    <div id="energie2">
+        +   </div>
+
+    <div id="energie3">
+        +    </div>
+
+    <div id="energie4">
+        +    </div>
+
+    
+        <img src="/img/$effect1.png" id="effect1" $effectClass1>      <div id="value1" $valueClass1></div>    
+        <img src="/img/$effect2.png" id="effect2" $effectClass2>      <div id="value2" $valueClass2></div>    
+        <img src="/img/$effect3.png" id="effect3" $effectClass3>      <div id="value3" $valueClass3></div>    
+        <img src="/img/$effect4.png" id="effect4" $effectClass4>      <div id="value4" $valueClass4></div>    
+        <img src="/img/$effect5.png" id="effect5" $effectClass5>      <div id="value5" $valueClass5></div>    
+        <img src="/img/$effect6.png" id="effect6" $effectClass6>     <div id="value6" $valueClass6></div>    
+        <img src="/img/$effect7.png" id="effect7" $effectClass7>      <div id="value7" $valueClass7></div>    
+        <img src="/img/$effect8.png" id="effect8" $effectClass8>      <div id="value8" $valueClass8></div>
+
+
+</div>
+   
+
+    
+
+</div>
+</div>
+</div>
+END;
+
+?>
+
+<h1>Druh - <?php echo $type ?> (<?php 
+        
+    $islandname = $cards[$user]["islands"][$islandid]["name"];
+
+    echo "<a href='/ostrov/$user/$islandid'>$islandname</a>"
+        
+    ?>) </h1>
+<h2>Vytvořil: <?php 
+
+echo "<a href='/sbirka/$user'>$user</a>"
+
+?></h2>
+
+<button onclick=generate()>Generovat</button>
+<button onclick=report()>Nahlásit</button>
+
+<script>
+
+var json = <?php echo json_encode($card) ?>;
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script src="/type.js"></script>
+
+</body>
+</html>

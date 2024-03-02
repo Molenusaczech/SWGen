@@ -24,6 +24,12 @@ if ($args[1] == "api" && $args[2] == "card") {
 } else if ($args[1] == "api" && $args[2] == "report") {
     require "../reportapi.php";
     exit();
+} else if ($args[1] == "api" && $args[2] == "type") {
+    require "../typeapi.php";
+    exit();
+}else if ($args[1] == "api" && $args[2] == "island") {
+    require "../islandapi.php";
+    exit();
 }
 
 if ($args[1] !== "sbirka" || isset($args[2])) {
@@ -70,6 +76,17 @@ if ($request == "/") {
     } else {
         require "../404.php";
     }
+} else if ($args[1] == "ostrov") {
+    $user = $args[2];
+    $islandid = $args[3];
+    require "../ostrov.php";
+} else if ($args[1] == "typ") {
+    require "../createtype.php";
+} else if ($args[1] == "druh") {
+    $user = $args[2];
+    $islandid = $args[3];
+    $typeid = $args[4];
+    require "../druh.php";
 } else {
     require "../404.php";
 }
